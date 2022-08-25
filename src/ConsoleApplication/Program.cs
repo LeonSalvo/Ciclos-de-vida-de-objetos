@@ -32,7 +32,15 @@ namespace ConsoleApplication
 
             Console.WriteLine($"t1 == t2: {t1 == t2}");
             Console.WriteLine($"t2 == t3: {t1 == t2}");
+            /* 
+            7) Al crear 1000000 objetos de clase tren lo que sucede es que 
+            se llena el heap de la memoria y el runetime comienza a eliminar
+            los objetos de clase tren que no están siendo utilizados para
+            asi poder asignar los nuevos objetos.
 
+            9) Ninguno de los trenes son iguales entre si ya que todas las
+            variables apuntan a distintos objetos de la misma clase.
+            */
             
             
         }
